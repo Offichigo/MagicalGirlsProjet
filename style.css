@@ -5,15 +5,36 @@
 }
 
 body{
+  font-family: "edu sa beginner", sans-serif;
+  font-size: 1.5rem;
+  color: #eed29c;
   margin: 0.5em;
   line-height: 1.5;
+  background-color: #5e5fab;
 }
+nav a {
+color:black;
 
+}
 nav {
+  background: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)),
+  url("sailor moon images/sailor-moon-wallpaper-v0-42ip0ows3use1.webp");
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+   /* width: 20%;
+  height: 10%; */
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   border: 2px solid black;
+  margin-bottom: 2em;
+  padding: 2em;
+}
+
+nav > div {
+  border: 2px solid black;
+  background-color: azure;
+  opacity: 0.6;
 }
 
 .container {
