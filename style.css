@@ -1,3 +1,5 @@
+/* Initialisation CSS */
+
 * {
   margin: 0;
   padding: 0;
@@ -8,14 +10,15 @@ body{
   font-family: "edu sa beginner", sans-serif;
   font-size: 1.5rem;
   color: #eed29c;
-  margin: 0.5em;
   line-height: 1.5;
   background-color: #5e5fab;
 }
+
 nav a {
 color:black;
-
+text-decoration: none; /*enlève soulignement*/
 }
+
 nav {
   background: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)),
   url("sailor moon images/sailor-moon-wallpaper-v0-42ip0ows3use1.webp");
