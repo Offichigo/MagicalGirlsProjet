@@ -6,12 +6,23 @@
   box-sizing: border-box;
 }
 
+/*Variables CSS pour faciliter mise en page*/
+
+:root{
+    /*mise en page*/
+--main-bg-color:#5e5fab;
+--main-text-color: #eed29c;
+--main-font-family: "edu sa beginner", sans-serif;
+--main-font-size: 1.5rem;
+--main-line-height: 1.5;
+}
+
 body{
-  font-family: "edu sa beginner", sans-serif;
-  font-size: 1.5rem;
-  color: #eed29c;
-  line-height: 1.5;
-  background-color: #5e5fab;
+  background-color: var(--main-bg-color);
+  font-family: var(--main-font-family);
+  font-size: var(--main-font-size);
+  color: var(--main-text-color);
+  line-height: var(--main-line-height);  
 }
 
 nav a {
