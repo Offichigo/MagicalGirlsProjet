@@ -218,7 +218,17 @@ nav img {
 /* Ajouter lien GitHub/Repo */
 
 footer {
-  display: flex;
+  border: 2px solid black;
+  line-height: 1;
+  padding: 0.5em;
+  /* display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between; */
+}
+
+.github {
+  font-family: var(--main-font-family);
+  font-size: var(--main-font-size);
+  color: var(--main-text-color);
+  text-decoration: none;
 }
