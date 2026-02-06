@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*Variables CSS pour faciliter mise en page*/
 
 :root {
@@ -17,7 +21,7 @@
   --nav-button-bg-color: #ff80ff;
 }
 
-/* Mettre media quieries + mode light/dark si possible + nav en scroll*/
+/* FAILED : Mettre media quieries */
 
 /* Mise en page body */
 
@@ -31,7 +35,7 @@ body {
   margin-top: 6.5em;
 }
 
-/*Header*/
+/* HEADER */
 
 nav {
   background:
@@ -47,7 +51,6 @@ nav {
   margin-bottom: 2em;
   height: 5em;
   position: absolute;
-
   left: 0;
   top: 0;
   width: 100%;
@@ -63,6 +66,7 @@ nav a {
 nav > div {
   width: 25%;
 }
+
 #divLogo {
   display: flex;
   justify-content: center;
@@ -72,6 +76,7 @@ nav > div {
 .buttonNav:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
 }
+
 nav a :hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
 }
@@ -91,7 +96,7 @@ nav img {
   height: 3em;
 }
 
-/* Main */
+/* MAIN */
 
 /* Création d'une grille/section */
 
@@ -99,49 +104,36 @@ nav img {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(5, auto);
-  gap: 1em 0.5em;
+  gap: 1em 0em;
 }
 
-/* Placement des sections */
-
-/* Section/Description */
+/* Section/Description*/
 
 .description {
   grid-column: 1 / 5;
   grid-row: 1 / 3;
-  border: 2px solid red;
-  padding: 1rem;
+  /* border: 4px solid red; */
+  padding: 2rem;
 }
 
 /* Section/Image */
-/* Comment optimiser taille et disposition grid pour que l'image remplisse tout le contenu ? */
-/* Comment faire pour coller la grid cardYelloW à la grid container2 ? */
 
 .cardYellow {
   grid-column: 5 / 7;
   grid-row: 1 / 2;
-  border: 2px solid yellow;
-  /* display: flex;
-  justify-content: center; */
 }
 
 .cardYellowImage {
   width: 100%;
-  height: 100%; /* j'ai modifié auto en % pour que l'image remplisse la zone */
+  height: 100%;
   object-fit: cover;
-  border: 2px solid yellow;
   align-self: center;
 }
 
 /* Section/CarteIdentité */
 
-/* Optimiser cette partie ? */
-
 .container2 {
-  /* positionnement container2 */
   grid-column: 5 / 7;
-  /* grid-row: 2 / 3; */
-  /* création d'une grille interne */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -149,15 +141,17 @@ nav img {
 
 .carte {
   grid-column: 5/7;
-  border: 2px solid blue;
   display: grid;
+  grid-template-rows: max-content 100% 1fr;
   gap: 0;
 }
 
 .container2 > div {
-  border: 0.2em solid #ff80ff;
-  height: 100%;
-  font-size: 0.9rem;
+  border: 4px solid #ff80ff;
+  border-radius: 3px;
+  text-align: center;
+  margin: 0.5em;
+  padding: 1rem;
 }
 
 /* Section/FriseChronologique */
@@ -165,13 +159,10 @@ nav img {
 .frise {
   grid-column: 1 / 7;
   grid-row: 3 / 4;
-  border: 2px solid orange;
   display: grid;
   grid-template-columns: repeat(4, auto);
   grid-template-rows: repeat(2, auto);
-  border: 2px solid white;
   display: flex;
-  /* flex-direction: column; */
   align-items: flex-start;
   text-align: left;
   list-style-position: inside;
@@ -185,16 +176,7 @@ nav img {
 .imageDivFrise {
   grid-column: 1 / 7;
   grid-row: 4 / 5;
-  border: dotted 0.1em #ff80ff;
 }
-
-/* gap: 2rem;
-  padding: 2rem; */
-
-/* .container3 {
-  text-align: center;
-  list-style-position: inside;
-} */
 
 .container3 ul {
   padding-left: 1rem;
@@ -204,14 +186,19 @@ nav img {
   height: 7em;
 }
 
-/* à compléter dans HTML */
-
 /* Section/CitationInfluence */
 
 .citation {
   grid-column: 1 / 4;
   grid-row: 5 / 6;
-  border: 2px solid black;
+  margin: 5em;
+}
+
+.imgCitation {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  align-self: center;
 }
 
 /* Section/Générique */
@@ -219,20 +206,16 @@ nav img {
 .youtube {
   grid-column: 4 / 7;
   grid-row: 5 / 6;
-  border: 2px solid pink;
+  margin: 5em;
 }
 
 /*Footer*/
 
-/* Ajouter lien GitHub/Repo */
-
 footer {
-  border: 2px solid black;
+  text-align: center;
   line-height: 1;
   padding: 0.5em;
-  /* display: flex;
-  flex-direction: row;
-  justify-content: space-between; */
+  margin: 10em;
 }
 
 .github {
