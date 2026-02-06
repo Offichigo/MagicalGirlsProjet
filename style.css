@@ -11,9 +11,9 @@
 :root {
   --main-bg-color: #525395;
   --main-text-color: #eed29c;
-  --main-font-family: "edu sa beginner", sans-serif;
-  --main-font-size: 1.5rem;
-  --main-line-height: 1.5;
+  --main-font-family: "Overlock", sans-serif;
+  --main-font-size: 1rem;
+  --main-line-height: 2;
   --nav-button-bg-color: #ff80ff;
 }
 
@@ -98,7 +98,7 @@ nav img {
 .container1 {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(4, auto);
+  grid-template-rows: repeat(5, auto);
   gap: 1em 0.5em;
 }
 
@@ -121,14 +121,14 @@ nav img {
   grid-column: 5 / 7;
   grid-row: 1 / 2;
   border: 2px solid yellow;
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
 }
 
 .cardYellowImage {
   width: 100%;
   height: 100%; /* j'ai modifié auto en % pour que l'image remplisse la zone */
-  object-fit: cover; /* ça permet de ne pas déformer l'image :) */
+  object-fit: cover;
   border: 2px solid yellow;
   align-self: center;
 }
@@ -162,37 +162,46 @@ nav img {
 
 /* Section/FriseChronologique */
 
-/* .frise {
+.frise {
   grid-column: 1 / 7;
   grid-row: 3 / 4;
   border: 2px solid orange;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, auto);
   grid-template-rows: repeat(2, auto);
   border: 2px solid white;
-} */
-
-.frise {
   display: flex;
-  text-align: center;
+  /* flex-direction: column; */
+  align-items: flex-start;
+  text-align: left;
   list-style-position: inside;
+  font-size: 1rem;
+  width: 100%;
 }
-/* .imageDivFrise {
-  display: flex; */
+
+.frise h3 {
+  font-size: 1.5rem;
+}
+.imageDivFrise {
+  grid-column: 1 / 7;
+  grid-row: 4 / 5;
+  border: dotted 0.1em #ff80ff;
+}
+
 /* gap: 2rem;
   padding: 2rem; */
 
-/* .periode {
+/* .container3 {
   text-align: center;
   list-style-position: inside;
 } */
 
-.periode ul {
+.container3 ul {
   padding-left: 1rem;
 }
 
 .friseImage {
-  height: 5em;
+  height: 7em;
 }
 
 /* à compléter dans HTML */
@@ -201,7 +210,7 @@ nav img {
 
 .citation {
   grid-column: 1 / 4;
-  grid-row: 4 / 5;
+  grid-row: 5 / 6;
   border: 2px solid black;
 }
 
@@ -209,7 +218,7 @@ nav img {
 
 .youtube {
   grid-column: 4 / 7;
-  grid-row: 4 / 5;
+  grid-row: 5 / 6;
   border: 2px solid pink;
 }
 
