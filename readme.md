@@ -60,7 +60,13 @@ Projet réalisé dans le cadre d’un exercice HTML/CSS pour une formation de De
 
 ## Sources
 
-A compléter
+https://sailormoon.fandom.com/wiki/Sailor_Moon_Wiki
+
+https://sailor-moon-crystal.fandom.com/fr/wiki/Sailor_Moon
+
+https://bounthavy.com/sailor-moon-le-manga-pro-lgbt-amours-lesbiennes-et-travestis-garantis/
+
+https://safeschoolssouthflorida-org.translate.goog/sailor-moon-a-beacon-of-queer-representation-and-empowerment/?_x_tr_sl=en&_x_tr_tl=fr&_x_tr_hl=fr&_x_tr_pto=rq
 
 ## Compétences à acquérir :
 
